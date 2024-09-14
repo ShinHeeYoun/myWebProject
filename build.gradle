@@ -17,12 +17,15 @@ repositories {
 	mavenCentral()
 }
 
+// 연동 라이브러리
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
+// spring boot starter web 라이브러리를 implement 하면, 얘가 필요한 라이브러리를 같이 implement 해준다 (의존 관계 땡겨옴)
+// 오른쪽 위 코끼리 누르면 practice-spring 밑에 Dependencies / 여기서 의존관계 확인 가능
 
 tasks.named('test') {
 	useJUnitPlatform()
