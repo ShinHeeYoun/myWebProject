@@ -26,7 +26,7 @@ public class MemberService {
     private void ValidateExtract(Member member) {
         memberRepository.findByName(member.getName())
                 .ifPresent(m -> {
-                    throw new IllegalStateException("Fail - this client is alreadt exist.");
+                    throw new IllegalStateException("Fail - this client is already exist.");
                 });
     }
 
