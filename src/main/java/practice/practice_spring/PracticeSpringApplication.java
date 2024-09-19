@@ -26,5 +26,15 @@ public class PracticeSpringApplication {
  - MVC + 템플릿 엔진
  - API
 
+ >> 정적 컨텐츠
+ 그냥 파일을 그대로 내려준다
+
+ >> MVC + 템플릿 엔진
+ 템플릿 엔진을 Model View Controller 방식으로 쪼개서 Html을 랜더링 해서 랜더링 된 것을 고객에게 전달
+
+ >> API
+ 객체를 반환한다
+ JSON 스타일로 바꿔서 반환, ResponseBody = VIEW 없음
+
 
 */

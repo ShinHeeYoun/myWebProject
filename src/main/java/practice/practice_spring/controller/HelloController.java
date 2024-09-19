@@ -29,11 +29,12 @@ public class HelloController {
     // hello 홍길동 <- 출력됨
 
     @GetMapping("hello-string")
-    @ResponseBody // body 부분에 이 데이터를 내가 직접 넣어주겠다
+    @ResponseBody
     public String helloString(@RequestParam("name") String name, Model model){
         return "hello " + name;
     }
-    // html 파일 필요 없이 내가
+    // @ResponseBody =  body 부분에 이 데이터를 내가 직접 넣어주겠다
+    // html 파일 필요 없이 직접 됨
     // http://localhost:8080/hello-mvc?name=홍길동
     // hello 홍길동 <- 출력됨
     // 그대로 body에 넣어지는 것
@@ -67,3 +68,4 @@ public class HelloController {
     }
     // Alt+insert 단축키로 생성 --> Getter and Setter 생성
 }
+
